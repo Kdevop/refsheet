@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to right, black, 25%, dimgrey);
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    width: 100px;
+    padding: 20px;
+    margin-top: -7em;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: tomato;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: tomato;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: azure;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    color: azure;
+}
+
+span {
+    color: azure;
+}
+
+h2 {
+    color: azure;
+}
+
+h3 {
+    color: azure;
+}
+
+h4 {
+    color: azure;
+}
+
+table, th, td {
+    border: 1px solid orangered;
+    border-collapse: collapse;
+    text-align: center;
+    color: azure;
+}
+
+.code {
+    font-family: Georgia, serif;
+    background-color: darkslategray;
+}
+
+p {
+    color: azure;
+}
