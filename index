@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>K's Reference Sheet</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Header Element -->
+        <header>
+            <h1>K's Reference Sheet</h1>
+            <span>CSS and HTML Reference Guide</span>
+        </header>
+        <!-- Navigation pain -->
+        <nav>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Navigation<i class="fa fa-carat-down"></i></button>
+                    <div class="dropdown-content">
+                    <a href="#htmltop">HTML Reference</a>
+                    <a href="#htmltables">HTML Tables</a>
+                    <a href="#htmlnormal">'Normal' HTML Tags</a>
+                    <a href="#htmlsemantic">Semantic HTML Tags</a>
+                    <a href="#csstop">CSS Reference</a>
+                    <a href="#csscommon">CSS Selectors and Specificity</a>
+                    <a href="#cssproperties">Common CSS properties</a>
+                    <a href="#references">References</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Start of HTML elements -->
+        <div>
+            <div>
+                <h2 id="html top">HTML References</h2>
+            </div>
+
+            <!-- HTML Tables -->
+            <section>
+                <h3 id="htmltables">HTML Table Reference</h3>
+                <h4>Table Tags</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">&lt;table&gt;</td>
+                            <td>Table</td>
+                            <td>The wrapper element for all HTNL tables and the associated tags.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;thead&gt;</td>
+                            <td>Table Head</td>
+                            <td>The set of rows defining the volumn headers in a table.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;tbody&gt;</td>
+                            <td>Table Body</td>
+                            <td>The set of rows containing actual table data.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;tr&gt;</td>
+                            <td>Table Row</td>
+                            <td>The table row container for each line you need in the table.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;td&gt;</td>
+                            <td>Table Data</td>
+                            <td>A column cell that you need for each row (embed in the table row tag).</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;tfoot&gt;</td>
+                            <td>Table Foot</td>
+                            <td>The set of rows defining the footer in a table</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Table Attributes</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">colspan</td>
+                            <td>Column Span</td>
+                            <td>Defines how many columne a td element should span.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">rowspan</td>
+                            <td>Row Span</td>
+                            <td>Defines how many ros a td element should span.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <!-- Normal HTML Tag -->
+            <section>
+                <h3 id="htlmnormal">'Normal' HTML Tags</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">&lt;head&gt;</td>
+                            <td>Head</td>
+                            <td>Contains machine-readible information (metadata) about the documents, like title, scripts and stylesheets.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;h1&gt;-&lt;h6&gt;</td>
+                            <td>Headings</td>
+                            <td>Headings for content. Start at h1 as the largeest and also most important and go to h6 as the smallest and leaste important.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;div&gt;</td>
+                            <td>Division</td>
+                            <td>Generic container for flow content. Used to seperate parts of the HTML out. Has no effect on styling itself inless paid with CSS.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;p&gt;</td>
+                            <td>Paragragh</td>
+                            <td>Represents a paragraph of usually texts, but can be used for any structual grouping, lile images.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;ul&gt;</td>
+                            <td>Un-ordered List</td>
+                            <td>Used to represent a list of items, typically rendered as bullet points.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;ol&gt;</td>
+                            <td>Ordered List</td>
+                            <td>Used to represent a list of items, typically from top to bottom.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;li&gt;</td>
+                            <td>List Item</td>
+                            <td>Items for a list, to be embded in either ol or ul.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;a&gt;</td>
+                            <td>Anchor Tag</td>
+                            <td>Anchor elements are used with their href attributes to vreate hyper links to othe pages, files, email address, location on the same page etc.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;span&gt;</td>
+                            <td>Span</td>
+                            <td>Generic inline container for phrasing content, in itself it does not do anything, but usally paired with CSS.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!-- Semantic HTML Tags -->
+            <section>
+                <h3 id="htmlsemantic">Semantic HTML Tags</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">&lt;article&gt;</td>
+                            <td>The Article Element</td>
+                            <td>This represents a self-contained composition in a document, page etc. It is intended to be independantly distributable or reusable such as a magazine or newpaper article.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;aside&gt;</td>
+                            <td>The Aside Element</td>
+                            <td>This represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;nav&gt;</td>
+                            <td>The Navigation Section</td>
+                            <td>This epresents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;section&gt;</td>
+                            <td>The Generic Section Element</td>
+                            <td>This  represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">&lt;main&gt;</td>
+                            <td>The Main Content</td>
+                            <td>This represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Start of CSS Elements -->
+        <div>
+            <div>
+                <h2 id="csstop">CSS Reference</h2>
+            </div>
+
+            <!-- CSS Selectors and Specificity -->
+            <section>
+                <h3 id="csscommon">CSS Selectors and Specificity</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selectors</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">#id</td>
+                            <td>ID Selector</td>
+                            <td>Selects the element to style based on ID. Element must have the ID assigned and in css the ID name is prefixed with a '#'. This is the most specific.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.class</td>
+                            <td>Class Selector</td>
+                            <td>Selects the element to style based on class. This can be one element or multiple. Element(s) must have the class assigned and in css the class name is prefixed with a '.'. This is the second most specific.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">element</td>
+                            <td>Element Selector</td>
+                            <td>Selects the element(s) to style based on the elemnt name. For instance if you typed 'h3' this would style all of the h3 elements. This is the leaste specific.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">*</td>
+                            <td>Universal Selector</td>
+                            <td>This styles the entire page. it is often used to reset the styleing that many modern browsers will automatically apply.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">element[attribute]</td>
+                            <td>Attribute Selectors</td>
+                            <td>All elements based on the name or value of a specific attribute can be selected and styled at once using a CSS attribute selector.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">element.class</td>
+                            <td>Element and class secector</td>
+                            <td>Used to select a specified element within the specified class.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">selector1 selector2</td>
+                            <td>Descendant Selector</td>
+                            <td>Every elements that are descendants of a particular element are matched by the descendant selector. Whenever styling needs to be attributed to a few individual elements, this would be incredibly beneficial. </td>
+                        </tr>
+                        <tr>
+                            <td class="code">selector1, selector2, selector3</td>
+                            <td>Selector list</td>
+                            <td>The list selector will apply styling to ever selector in the list seperated by a ','.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">selector.hover</td>
+                            <td>Pseudo-classes</td>
+                            <td>The distinct state of an element is specified by a pseudo class (:). Based on the state of an element, styling can be applied. for instance, when a user mouses over it, visits, or clicks on a link.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Common CSS properties -->
+            <section>
+                <h3 id="cssproperties">Common CSS Properties</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Properties</th>
+                            <th>Descrition</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">algin-content</td>
+                            <td>Align Content</td>
+                            <td>This property sets the distribution of space between and around content items. There are examples of this in mdn web docs.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">background</td>
+                            <td>Background Property</td>
+                            <td>This attribute sets all background styles properties. Can be amended for image, colour size etc. </td>
+                        </tr>
+                        <tr>
+                            <td class="code">border</td>
+                            <td>Boder Property</td>
+                            <td>This seets an elements border. Can be used with border0width, border-style etc. There are many examples in mdn web docs.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">color</td>
+                            <td>Color Property</td>
+                            <td>This sets the foreground color value of an elements text and text decorations. </td>
+                        </tr>
+                        <tr>
+                            <td class="code">display</td>
+                            <td>Display Property</td>
+                            <td>This sets whether an element is treated as a block, inline box and the layout used for its children.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">float</td>
+                            <td>Float Property</td>
+                            <td>This places an element on the left or right side of its container. There are examples of how to use this in mdn web docs.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">font</td>
+                            <td>Font Property</td>
+                            <td>This sets all the different properties of an elements font. Has alternatives sich as font-family etc.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">height</td>
+                            <td>Height Property</td>
+                            <td>Sets the heights of an element.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">width</td>
+                            <td>Width Property</td>
+                            <td>Sets the width of an element.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">margin</td>
+                            <td>Margin Property</td>
+                            <td>Sets the margin area of an element. There are many variations of this.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">padding</td>
+                            <td>Padding Property</td>
+                            <td>This sets the padding on all four sides of an element. There are variations of this.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">z-index</td>
+                            <td>Z-Index Property</td>
+                            <td>This sets the z-order of a positioned element. It essenitally determines which elements show on top if they overlap or are laid on top of one another.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">opacity</td>
+                            <td>Opacity Property</td>
+                            <td>This determines how transparant an element is</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Start of references -->
+        <div>
+            <h2 id="references">References</h2>
+            <p>There were so many different selectors and properties. I did not list them all of is really worth looking these up using the below.</p>
+            <p>MDN Web Docs is really useful and if available <a href="https://developer.mozilla.org/en-US/" alt="link to mdn web docs">here.</a></p>
+            <p>W3C School is another really good resource and is available <a href="https://www.w3schools.com/" alt="link to w3c school">here.</a></p>
+            
+        </div>
+
+    </body>
+</html>
